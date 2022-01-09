@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+}
+
+* {
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.mat-toolbar {
+    background-image: linear-gradient(to right, #ff9671, #ff9e6c, #ffa768, #ffb064, #ffba61, #ffc260, #ffcb60, #ffd361, #fedc64, #fde567, #fbef6c, #f9f871);
+    /**
+    Enter colors
+    #FF9671
+    #FFC75F
+    #F9F871
+    */
+    color: #FFFFFF;
+}
+
+mat-sidenav-container, mat-sidenav-content {
+    height: calc(100vh - 65px);
+}
+
+mat-sidenav {
+    width: 250px;
+    min-width: 250px;
+    background-color: white !important;
+}
+
+.mat-list-base .mat-list-item {
+    color: grey !important;
+}
+
+.mat-list-base {
+    padding: 0 !important;
+}
+
+.mat-list-item.active {
+    color: #FF9671 !important;
+    background-color: whitesmoke !important;
+}
+
+.mat-toolbar, .mat-toolbar h1, .mat-toolbar h2, .mat-toolbar h3, .mat-toolbar h4, .mat-toolbar h5, .mat-toolbar h6 {
+    font-family: 'Oxygen', sans-serif;
+}

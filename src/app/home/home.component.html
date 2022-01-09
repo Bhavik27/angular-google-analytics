@@ -1,0 +1,45 @@
+<div class="container py-2">
+    <div class="row">
+
+        <div class="col-4">
+            <mat-card>
+                <mat-card-title>Orders</mat-card-title>
+                <mat-card-subtitle>1000</mat-card-subtitle>
+            </mat-card>
+        </div>
+        <div class="col-4">
+            <mat-card>
+                <mat-card-title>Sales</mat-card-title>
+                <mat-card-subtitle>20k</mat-card-subtitle>
+            </mat-card>
+        </div>
+        <div class="col-4">
+            <mat-card>
+                <mat-card-title>Earning</mat-card-title>
+                <mat-card-subtitle>25k</mat-card-subtitle>
+            </mat-card>
+        </div>
+
+    </div>
+    <div class="row pt-3">
+        <div class="col-12">
+            <mat-card>
+                <!--The content below is only a placeholder and can be replaced.-->
+                <div id="chart">
+                    <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                    [yaxis]="chartOptions.yaxis"
+                    [xaxis]="chartOptions.xaxis"
+                    [labels]="chartOptions.labels"
+                    [stroke]="chartOptions.stroke"
+                    [plotOptions]="chartOptions.plotOptions"
+                    [markers]="chartOptions.markers"
+                    [fill]="chartOptions.fill"
+                    [tooltip]="chartOptions.tooltip"
+                  ></apx-chart>
+                </div>  
+            </mat-card>
+        </div>
+    </div>
+</div>
