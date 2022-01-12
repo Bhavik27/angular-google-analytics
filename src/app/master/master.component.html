@@ -1,47 +1,47 @@
 <mat-toolbar class="mat-elevation-z8">
-    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
-      <mat-icon *ngIf="!sidenav.opened">
-        menu
-      </mat-icon>
-      <mat-icon *ngIf="sidenav.opened">
-        close
-      </mat-icon>
-    </button>
-    <mat-icon class="me-2">signal_cellular_alt</mat-icon> Analytics
-  </mat-toolbar>
-  
-  <mat-sidenav-container>
-    <mat-sidenav #sidenav="matSidenav">
-  
-      <mat-nav-list>
-  
-        <mat-list-item routerLink="home" routerLinkActive="active">
-          <mat-icon mat-list-icon>home</mat-icon>
-          <div mat-line>Home</div>
-        </mat-list-item>
-  
-        <mat-divider></mat-divider>
-  
-        <mat-list-item routerLink="users" routerLinkActive="active">
-          <mat-icon mat-list-icon>people</mat-icon>
-          <div mat-line>Users</div>
-        </mat-list-item>
-  
-        <mat-divider></mat-divider>
-  
-        <mat-list-item routerLink="accounts" routerLinkActive="active">
-          <mat-icon mat-list-icon>contacts</mat-icon>
-          <div mat-line>Accounts</div>
-        </mat-list-item>
-  
-        <mat-divider></mat-divider>
-  
-      </mat-nav-list>
-  
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <div>
-        <router-outlet></router-outlet>
-      </div>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+    <mat-icon *ngIf="!sidenav.opened">
+      menu
+    </mat-icon>
+    <mat-icon *ngIf="sidenav.opened">
+      close
+    </mat-icon>
+  </button>
+  <mat-icon class="me-2">signal_cellular_alt</mat-icon> Analytics
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav">
+
+    <mat-nav-list>
+
+      <mat-list-item routerLink="home" routerLinkActive="active">
+        <mat-icon mat-list-icon>home</mat-icon>
+        <div mat-line>Home</div>
+      </mat-list-item>
+
+      <mat-divider></mat-divider>
+
+      <mat-list-item routerLink="users" routerLinkActive="active">
+        <mat-icon mat-list-icon>people</mat-icon>
+        <div mat-line>Users</div>
+      </mat-list-item>
+
+      <mat-divider></mat-divider>
+
+      <mat-list-item routerLink="accounts" routerLinkActive="active">
+        <mat-icon mat-list-icon>contacts</mat-icon>
+        <div mat-line>Accounts</div>
+      </mat-list-item>
+
+      <mat-divider></mat-divider>
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
